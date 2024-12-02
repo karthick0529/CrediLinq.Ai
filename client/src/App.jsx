@@ -115,8 +115,9 @@ function App() {
         }));
   
         setUploadStatus(newStatuses);
-  
-        await axios.post("http://localhost:5000/api/submit", formDataToSend, {
+        // await axios.post("http://localhost:5000/api/submit", formDataToSend, {
+
+        await axios.post("https://credilinq-ai.onrender.com/api/submit", formDataToSend, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
